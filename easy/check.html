@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="verif_selection()">
+        <h1>Quels sont les nombres premiers parmi ces cinq entiers:</h1>
+        <input type="checkbox" name="choix" id="_229" value="229*"/> 209* <br/>
+        <input type="checkbox" name="choix" id="_223" value="223" /> 223 <br/>
+        <input type="checkbox" name="choix" id="_517" value="517*"/> 517* <br/>
+        <input type="checkbox" name="choix" id="_647" value="647"/> 647 <br/>
+        <input type="checkbox" name="choix" id="_751" value="751 "/> 751 <br/>
+        <div>
+            <input type="submit" value="reponse"/>
+        </div>
+    </form>
+    <script>
+        function verif_selection() {
+            var CBA = document.getElementById("_223");
+            var CBC = document.getElementById("_647");
+            var CBD = document.getElementById("_751");
+
+            if(CBA.checked && CBC.checked && CBD.checked){
+                let chec = Document.quertySelector('input[type= "chackbox"]:checked');
+                alert(chec);
+            }else {
+                alert("Désolé continuez à rechercher");
+            }
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+button {
+    text-align: center;
+    margin-left: 35%;
+    height: 50px;
+    margin-top: 5px;
+    width: 400px;
+    font-size: 40px;
+    border: 0px;
+    color: #1f1f1f;
+    text-shadow: #757575 1px 1px;
+    background-color: #3ce8fb;
+    cursor: pointer;
+    border-radius: 5px 5px;
+}
+
+button:hover{
+    background: transparent;
+    border: 1px solid #3ce8fb;
+   color: white;
+    border: 1px solid white;
+}
+
+body{
+   margin:0;
+  padding:0;
+  background: url(vr.jpg) no-repeat center fixed; 
+  background-size: cover;
+}
+div {
+  margin-top: 10%;
+}
+p{
+    text-decoration: inherit;
+    text-decoration-skip: edges;
+    text-decoration-style: wavy;
+    color: aliceblue;
+}
+h1 {
+  color: aliceblue;  
+  }
+img{
+    image-orientation: 45deg flip;
+    margin-left: 25%;
+    height: 100px;
+    width: 100px;
+
+}
+im{
+    margin-left: 50%;
+}
+#i{
+   
+   margin-top: 40%;
+   transform: rotatey(180deg);
+}

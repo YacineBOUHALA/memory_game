@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset = "utf-8">
+    <title> choix de difficultie  </title>
+    <link rel="stylesheet" href="choix_dificultie.css" type="text/css" media="screen">
+  </head>
+  <body> 
+      <h1>welcome to the game</h1>
+      <div id = "lab"> 
+          <form method = "post" action = "../easy/card.html"> <button id="button" >Easy</button></form>
+          <form method = "post" action = "../moyen/card.html"> <button id="button">Normal</button></form>
+          <form method = "post" action = "../hard/card.html"> <button id="button">Hard</button>
+          
+          </form>
+          
+      </div> 
+      
+      <script>
+      const titre = document.querySelector("img");
+          titre.style.position = "absolute";
+          let op = 0;
+          let dir = 1;
+          function gaucheDroite() {
+              if(op == 550) {dir = -1}
+              else if (op == 0) { dir = 1}
+              op += 2 * dir;
+              
+              titre.style.left = `${op}px`;
+              requestAnimationFrame(gaucheDroite);
+          }
+             requestAnimationFrame(gaucheDroite);
+          if(op == 550){
+           break;
+          }
+          
+      </script>
+            
+  </body>
+</html>
